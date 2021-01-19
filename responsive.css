@@ -23,11 +23,11 @@
     }
     .header ul a:hover {
         color: #348;
-        background-color: #fff;
+        background-color: var(--white-color);
     }
 
     .header ul a {
-        background-color: #fff;
+        background-color: var(--white-color);
     }
 
     .menu-two {
@@ -45,7 +45,7 @@
     /*Header*/
     .header{
         margin: 0 auto;
-        background-color: #fff;
+        background-color: var(--white-color);
         box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     }
 
