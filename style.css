@@ -23,39 +23,15 @@ body{
   header{
     background-color:var(--white-color);
     box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);
-    /*position:fixed;*/
+    position:fixed;
     width:100%;
     z-index:3;
+    top : 0;
   }
 
   .svg-one {
       z-index: 1;
   }
-
-  .alert {
-    padding: 12px;
-    background-color: #334488;
-    color: var(--white-color);
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 10px;
-  }
-  
-  .closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .closebtn:hover {
-    color: black;
-  }
-
 
 /*Menu Burger CSS*/
 
@@ -103,7 +79,6 @@ body{
   .header .menu {
       clear: both;
       max-height: 0;
-      transition: max-height .2s ease-out;
   }
 
 /*ICON CSS*/
@@ -169,7 +144,10 @@ body{
   .header .menu-btn:checked~.menu {
       max-height: 400px;
       scroll-behavior: auto;
-    overflow-y: scroll;
+      overflow-y: scroll;
+      transition: 0.8s;
+      -webkit-transition: 0.8s;
+
   }
   
   /*Fin Menu Burger*/
@@ -209,7 +187,7 @@ body{
 .headertwo .menu-two {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
+
 }
 
 label {
@@ -229,8 +207,14 @@ label {
 
 .menu-btn-two:checked~.menu-two {
     max-height: 400px;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+
 }
 
-
+.svg-first-background {
+    width: auto;
+    height: auto;
+}
 
 
